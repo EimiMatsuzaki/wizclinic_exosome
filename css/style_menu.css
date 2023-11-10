@@ -13,7 +13,7 @@
 
 .menu_title span{
     font-size: 128px;
-    font-family: Cormorant;
+    font-family: 'Cormorant', serif;
     font-weight: 300;
     letter-spacing: 0.06em;
     color: rgba(90, 140, 190, 0.32);
@@ -317,7 +317,7 @@
 
     .menu_price_bottom .set{
         justify-content: center;
-        column-gap: 20px;
+        column-gap: 15px;
         margin-top: 10px;
     }
 
