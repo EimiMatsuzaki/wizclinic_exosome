@@ -47,7 +47,7 @@
     display: flex;
     justify-content: space-between;
     width: 20%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .menu_exosome_item .left h3,
@@ -66,13 +66,13 @@
 .menu_exosome_item .right .priceoff{
     display: flex;
     justify-content: right;
-    align-items: center;
+    align-items: end;
     column-gap: 10px;
 }
 
 .menu_exosome_item .right .priceoff img{
     width: 55px;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .menu_exosome_item .right .priceoff p{
@@ -81,7 +81,7 @@
     letter-spacing: -0.01em;
 }
 
-.menu_exosome_item .right .priceoff span{
+.menu_exosome_item .right .priceoff .tax{
     font-size: 30px;
     letter-spacing: 0.04em;
 }
@@ -205,7 +205,7 @@
     color: #1a3d70;
 }
 
-.program_price span{
+.program_price .tax{
     font-size: 30px;
     letter-spacing: 0.04em;
     color: #1a3d70;
@@ -213,6 +213,10 @@
 
 .menu_price:nth-of-type(4){
     margin-top: 40px;
+}
+
+.comma{
+    font-size: 70%;
 }
 
 @media screen and (max-width:767px) {
@@ -269,7 +273,7 @@
         font-size: 40px;
     }
     
-    .menu_exosome_item .right .priceoff span{
+    .menu_exosome_item .right .priceoff .tax{
         font-size: 18px;
     }
 
@@ -332,7 +336,7 @@
         font-size: 40px;
     }
 
-    .program_price span{
+    .program_price .tax{
         font-size: 18px;
     }
 }
