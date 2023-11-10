@@ -915,6 +915,7 @@ header{
 
     .access_contents_right img{
         width: 110px;
+        margin-right: 0;
     }
 
     .access_contents_right h3{
@@ -926,6 +927,7 @@ header{
     .access_contents_right p{
         margin-top: 15px;
         text-align: center;
+        align-self: center;
     }
 }
 
