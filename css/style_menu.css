@@ -190,6 +190,7 @@
     border-bottom: solid 1px #1a3d70;
     position: absolute;
     top: 25px;
+    right: 5px;
     width: 100%;
 }
 
@@ -312,6 +313,10 @@
 
     .menu_price_top .square{
         padding: 3px 0 5px;
+    }
+
+    .menu_price_top .plus{
+        margin-bottom: 1px;
     }
 
     .menu_price_bottom{

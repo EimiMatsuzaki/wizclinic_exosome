@@ -208,10 +208,12 @@
     }
 
     .efficacy_item p{
-        text-align: left;
-        margin-top: 25px;
-        padding: 0 15%;
+        text-align: justify;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 0 13%;
         letter-spacing: 0.04em;
+        line-height: 28px;
     }
 
 }

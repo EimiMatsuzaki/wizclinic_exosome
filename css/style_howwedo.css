@@ -288,7 +288,7 @@
     }
 
     .hwd_bg{
-        padding: 60px 0px 80px;
+        padding: 50px 0px 80px;
         background-image: url(../images/bg_hwd_sp.svg);
         background-size: 23.3%;
     }
@@ -337,7 +337,7 @@
     }
 
     .hwd_figure_caption{
-        column-gap: 15px
+        column-gap: 5px;
     }
 
     .hwd_figure_caption .arrow_hwd{
@@ -347,6 +347,7 @@
     .hwd_figure_caption p{
         font-size: 16px;
         text-align: left;
+        letter-spacing: 0.08em;
     }
 
     .hwd_figure_caption p span{
@@ -380,7 +381,7 @@
 
     .hwd_item_sp .hwd_box .outside{
         position: relative;
-        max-width: 100%;
+        width: 100%;
         height: 620px;
         background: #cad5e6;
         -webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0 95%, 0 5%);
@@ -532,5 +533,12 @@
 @media screen and (min-width:768px) and (max-width:1024px){
     .hwd_box .inside{
         
+    }
+}
+
+/* 375px */
+@media screen and (max-width:389px){
+    .hwd_item_sp .hwd_box .outside{
+        height: 680px;
     }
 }

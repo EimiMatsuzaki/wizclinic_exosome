@@ -1,8 +1,14 @@
 @charset "UTF-8";
 
 /* 全体------------------------------------------- */
-html, body{
-    overflow-x: hidden;
+@media screen and (max-width:767px){
+    html, body{
+        overflow-x: hidden;
+    }
+}
+
+body{
+    background-color: #1b1e2e;
 }
 
 body, h2, h3, h4, p, ul, li{
@@ -423,6 +429,10 @@ header{
 }
 
 .kv_exosome{
+    margin-top: 20px;
+}
+
+.kv_exosome h2{
     color: #fff;
     /* font-size: 67px; */
     font-size: 4.9vw;
@@ -440,6 +450,7 @@ header{
     letter-spacing: 0.17em;
     margin-bottom: 15px;
     line-height: 1em;
+    color: #fff;
 }
 
 .kv_price{
@@ -460,14 +471,11 @@ header{
     display: flex;
     justify-content: center;
     column-gap: 0px;
-}
-
-.kv_efficacy:nth-of-type(2){
-    margin-top: 40px;
+    margin-top: -10px;
 }
 
 .kv_efficacy:nth-of-type(3){
-    margin-top: -10px;
+    margin-top: 45px;
 }
 
 .kv_efficacy_item{
@@ -530,7 +538,7 @@ header{
 
     .kv_right{
         width: 100%;
-        margin-top: 30px;
+        margin-top: 45px;
         padding-right: 0;
         padding-left: 0;
     }
@@ -539,18 +547,36 @@ header{
         width: 82.6vw;
     }
 
-    .kv_exosome span{
-        font-size: 16px;
-        line-height: 28px;
+    .kv_exosome{
+        /* font-size: 26px; */
+        font-size: 6.67vw;
+        line-height: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5px;
+        margin-top: -15px;
     }
 
-    .kv_exosome{
-        font-size: 26px;
-        line-height: 45px;
+    .kv_exosome span{
+        /* font-size: 16px; */
+        font-size: 4.1vw;
+        font-weight: 500;
+        line-height: 1em;
+        margin-bottom: 0;
+        display: block;
+    }
+
+    .kv_exosome h2{
+        margin-top: 0;
+        margin-bottom: 0.2em;
+        font-size: 6.67vw;
+        font-weight: 500;
     }
 
     .kv_price{
-        margin-top: 0px;
+        margin-top: -10px;
     }
 
     .kv_48000_sp{
@@ -568,18 +594,28 @@ header{
     }
 
     .kv_efficacy:nth-of-type(2){
-        margin-top: 5px;
+        /* margin-top: 5px; */
+    }
+
+    .kv_efficacy:nth-child(2){
+        margin-top: -10px;
     }
 
     .kv_efficacy_item{
-        width: 132px;
-        height: 54px;
+        width: 33.8vw;
+        height: 13.8vw;
         margin-right: -4px;
         margin-left: -4px;
+        padding-top: 1px;
+    }
+
+    .kv_efficacy:nth-of-type(3){
+        margin-top: 10px;
     }
 
     .kv_efficacy p{
-        font-size: 14px;
+        /* font-size: 14px; */
+        font-size: 3.59vw;
     }
 }
 
@@ -725,6 +761,7 @@ header{
     font-size: 22px;
     letter-spacing: 0.08em;
     color: #96bee6;
+    text-align: justify;
 }
 
 .faq_answer{
@@ -773,6 +810,7 @@ header{
 /* アクセス------------------------------------------- */
 #access{
     padding: 75px 8vw 140px;
+    background: linear-gradient(to bottom, #fff 0%, #fff6ef 75%);
 }
 
 .access_title{
@@ -822,7 +860,7 @@ header{
 
 .access_contents_right img{
     width: 130px;
-    margin-right: 10px;
+    margin-right: 90px;
 }
 
 .access_contents_right h3{
