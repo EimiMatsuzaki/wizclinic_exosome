@@ -1,0 +1,385 @@
+@charset "UTF-8";
+
+/* エクソソームとは */
+#exosome{
+    /* background-image: url(../images/bg_exosome_top.webp); */
+    /* background: linear-gradient(to bottom, #1b3e6b 50%, #1b1e2e); */
+}
+
+.exosome_top{
+    padding: 70px 0 0;
+    background-image: url(../images/bg_exosome_top2.jpg);
+    /* background: linear-gradient(to bottom, #1b3e6b 50%, #1b1e2e); */
+    /* background-image: url(../images/bg_exosome_top.webp); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-position: center; */
+    text-align: center;
+    height: 55vh;
+}
+
+.exosome_top span{
+    font-size: 128px;
+    font-family: Cormorant;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    color: rgba(70, 140, 190, 0.32);
+}
+
+.exosome_top h2{
+    font-size: 35px;
+    line-height: 48px;
+    letter-spacing: 0.08em;
+    color: #fff;
+    margin-top: -50px;
+    z-index: 1;
+}
+
+.exo_img{
+    width: 100%;
+    margin-top: -10%;
+}
+
+.exosome_bottom{
+    /* margin-top: -37%; */
+    background: linear-gradient(to bottom, #1b3e6b 50%, #1b1e2e);
+}
+
+.exosome_bottom_bg{
+    padding: 40px 8vw 140px;
+    background-image: url(../images/bg_exosome_bottom.svg);
+    background-repeat: no-repeat;
+    background-size: 41%;
+    background-position: left bottom;
+}
+
+.exosome_bottom .exosome_text{
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 8vw;
+    text-align: center;
+}
+
+.exosome_bottom .exosome_text h3{
+    /* margin-top: 7%; */
+    color: #faf080;
+    font-size: 22px;
+    line-height: 38.5px;
+    letter-spacing: 0.04em;
+}
+
+.exosome_bottom .exosome_text .paragraph{
+    margin-top: 35px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+}
+
+.ex_recommend{
+    max-width: 980px;
+    margin: 110px auto 0;
+    padding: 60px;
+    background: radial-gradient(circle, #fff 0%, #fff 45%, #cbdde9 68%);
+    border: solid 1px #a0b4d2;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow:  0 0 20px rgba(170, 210, 255, 0.6);
+}
+
+.ex_recommend h3{
+    text-align: center;
+    display: inline;
+    color: #1a3d70;
+    font-size: 35px;
+    letter-spacing: 0.02em;
+    border-bottom: solid 1px #468cbe;
+}
+
+.ex_recommend_box{
+    display: grid;
+    grid-template-columns: 50% 42%;
+    justify-content: space-between;
+    gap: 40px 0px;
+    margin-top: 40px;
+}
+
+.checkmark{
+	padding-left:30px;
+	position:relative;
+}
+
+.checkmark:before,
+.checkmark:after{
+	content:"";
+	display:block;
+	position:absolute;
+}
+
+.checkmark:before{
+	width:18px;
+	height:18px;
+	border-radius: 50%;
+	border:1px solid #468cbe;
+	left:0;
+    top:8px;
+}
+
+.checkmark:after{
+	border-left:1px solid #468cbe;
+	border-bottom:1px solid #468cbe;
+	width:8px;
+	height:6px;
+	-webkit-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+	left:5px;
+	top:13px;
+}
+
+.ex_recommend p{
+    color: #1b1e2e;
+    font-size: 22px;
+    /* letter-spacing: 0.03em; */
+    text-align: left;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:767px){
+    .exosome_top{
+        padding-top: 40px;
+        height: 18vh;
+    }
+
+    .exosome_top span{
+        font-size: 60px;
+    }
+
+    .exosome_top h2{
+        font-size: 22px;
+        line-height: 35px;
+        margin-top: -20px;
+    }
+
+    .exo_img{
+        margin-top: -9%;
+    }
+
+    .exosome_bottom_bg{
+        padding: 65px 20px 80px;
+    }
+
+    .exosome_bottom .exosome_text h3{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .exosome_bottom .exosome_text{
+        padding: 0;
+    }
+
+    .exosome_bottom .exosome_text .paragraph{
+        margin-top: 30px;
+        text-align: justify;
+    }
+
+    .ex_recommend{
+        margin-top: 35px;
+        padding: 40px 20px;
+    }
+
+    .ex_recommend h3{
+        font-size: 22px;
+    }
+
+    .ex_recommend_box{
+        display: block;
+        margin-top: 30px;
+    }
+
+    .checkmark:before{
+        top: 5px
+    }
+
+    .checkmark:after{
+        top: 10px;
+    }
+
+    .ex_recommend p{
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: -0.03em;
+    }
+}
+
+/* タブレット版 */
+@media screen and (min-width:768px) and (max-width:1024px){
+    .exosome_top{
+        height: 40vh;
+    }
+}
+
+/* ぜひお試しください */
+#ad{
+    background-image: url(../images/bg_ad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ad_contents{
+    max-width: 1102px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+.ad_img{
+    width: 52.6%;
+    vertical-align: bottom;
+    margin-top: -10%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.ad_right{
+    width: 55%;
+    /* margin-left: -5%; */
+    padding: 60px 0 0;
+    text-align: center;
+}
+
+.ad_right .h2_span{
+    font-size: 22px;
+    letter-spacing: 0.08em;
+    color: #1b1e2e;
+}
+
+.ad_right h2{
+    font-size: 50px;
+    line-height: 73px;
+    letter-spacing: 0.05em;
+    color: #1b1e2e;
+    margin-top: 10px;
+}
+
+.ad_flex{
+    display: flex;
+    /* margin-top: 30px; */
+}
+
+.ad_flex img{
+    width: 220px;
+}
+
+.ad_flex img:nth-child(2){
+    margin-top: 40px;
+}
+
+.ad_circle{
+    background-image: url(../images/ad_circle.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 220px;
+    height: 225px;
+    /* aspect-ratio: 1; */
+    /* padding-top: 45px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 40px;
+}
+
+.ad_circle:nth-child(2){
+    margin-top: 40px;
+    margin-left: -20px;
+}
+
+.ad_circle:nth-child(3){
+    margin-left: -20px;
+}
+
+.ad_circle span{
+    font-size: 30px;
+    letter-spacing: 0.08em;
+    color: #a0b4d2;
+    margin-right: 20px;
+}
+
+.ad_circle h3{
+    font-size: 26px;
+    letter-spacing: 0.08em;
+    color: #1b1e2e;
+    margin-right: 20px;
+}
+
+/* スマホ版 */
+@media screen and (max-width:767px){
+    #ad{
+        background-image: url(../images/bg_ad_sp.jpg);
+    }
+
+    .ad_right{
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 3%;
+    }
+
+    .ad_right .h2_span{
+        font-size: 16px;
+    }
+
+    .ad_right h2{
+        font-size: 22px;
+        line-height: 33px;
+        margin-top: 3px;
+        margin-bottom: 10px;
+    }
+
+    .ad_flex{
+        flex-direction: column;
+        align-items: end;
+        margin-top: 10px;
+    }
+
+    .ad_circle{
+        margin: 0;
+        padding: 0;
+        width: 34.1vw;
+        height: auto;
+        aspect-ratio: 1;
+        z-index: 1;
+    }
+
+    .ad_circle:nth-child(1){
+        margin-right: 23%;
+    }
+
+    .ad_circle:nth-child(2){
+        margin-top: -15%;
+    }
+
+    .ad_circle:nth-child(3){
+        margin-top: -12%;
+        margin-right: 20%;
+    }
+
+    .ad_circle span{
+        font-size: 18px;
+        margin-right: 10%;
+    }
+
+    .ad_circle h3{
+        font-size: 18px;
+        margin-right:10%;
+        margin-bottom: 18%;
+    }
+
+    .ad_img{
+        width: 75.9vw;
+    }
+
+}
