@@ -2,7 +2,7 @@
 
 /* 全体------------------------------------------- */
 html, body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 body, h2, h3, h4, p, ul, li{
@@ -71,7 +71,7 @@ img{
     text-align: center;
     width: 600px;
     margin: 90px auto 0;
-    padding: 20px 0;
+    padding: 27px 0 29px;
     text-decoration: none;
     border: solid 1px #fff;
     font-size: 22px;
@@ -303,7 +303,7 @@ header{
 	position:fixed;
     z-index: 9999;/*ボタンを最前面に*/
 	top:0;
-	right: 20px;
+	right: 0px;
 	cursor: pointer;
     width: 50px;
     height:50px;
@@ -556,10 +556,6 @@ header{
     }
 
     .kv_efficacy:nth-of-type(2){
-        margin-top: 5px;
-    }
-
-    .kv_efficacy:nth-of-type(3){
         margin-top: 5px;
     }
 
@@ -868,6 +864,7 @@ header{
     .access_contents_right h3{
         font-size: 18px;
         margin-top: 20px;
+        align-self: center;
     }
     
     .access_contents_right p{
