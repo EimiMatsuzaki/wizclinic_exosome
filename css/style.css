@@ -523,8 +523,10 @@ header{
         width: 25.6vw;
         height: auto;
         aspect-ratio: 1;
-        font-size: 18px;
-        line-height: 23px;
+        /* font-size: 18px; */
+        font-size: 4.62vw;
+        /* line-height: 23px; */
+        line-height: 5.9vw;
         margin-right: 20px;
     }
 
@@ -672,13 +674,6 @@ header{
     color: #468cbe;
 }
 
-.fixed {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 999;
-  }
-
 /* スマホ版 */
 @media screen and (max-width:767px){
     #nav_pc{
@@ -763,6 +758,9 @@ header{
     letter-spacing: 0.08em;
     color: #96bee6;
     text-align: justify;
+    display: flex;
+    column-gap: 1em;
+    align-items: end;
 }
 
 .faq_answer{
@@ -801,12 +799,15 @@ header{
 
     .faq_question{
         font-size: 18px;
+        column-gap: 0.5em;
+        align-items: start;
     }
 
     .faq_answer{
         margin-top: 20px;
     }
 }
+
 
 /* アクセス------------------------------------------- */
 #access{
@@ -1085,6 +1086,10 @@ footer{
         position: fixed;
         bottom: 0;
         z-index: 999;
+        transition:all 0.3s;
+        /*はじめは非表示*/
+        opacity: 0;
+        transform: translateY(100px);
     }
 
     .arrow_banner{
@@ -1095,11 +1100,54 @@ footer{
         transform: translate(-50%, -50%);
     }
 
+    /*　上に上がる動き　*/
+
+    .banner_sp.UpMove{
+        animation: UpAnime 0.5s forwards;
+    }
+    @keyframes UpAnime{
+        from {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /*　下に下がる動き　*/
+
+    .banner_sp.DownMove{
+        animation: DownAnime 0.5s forwards;
+    }
+    @keyframes DownAnime{
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(100px);
+        }
+    }
+
 }
 
 /* PC版 */
 @media screen and (min-width:768px){
     .banner_sp{
         display: none;
+    }
+}
+
+/* タブレット版 */
+@media screen and (min-width:768px) and (max-width: 1024px){
+    .faq_question{
+        align-items: start;
+    }
+
+    .access_contents_right img{
+        margin-right: 30px;
     }
 }

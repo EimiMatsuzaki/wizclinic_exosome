@@ -535,12 +535,12 @@
 
 /* タブレット版 */
 @media screen and (min-width:768px) and (max-width:1024px){
-    .hwd_box .inside{
-        
+    .hwd_box .outside{
+        min-height: 570px;
     }
 }
 
-/* 375px */
+/* 375px用 */
 @media screen and (max-width:389px){
     .hwd_item_sp .hwd_box .outside{
         height: 650px;
@@ -554,4 +554,15 @@
         height: 600px;
     }
     
+}
+
+/* スマホ最大 */
+@media screen and (min-width:600px) and (max-width:767px){
+    .hwd_item_sp:nth-child(3) .hwd_box .outside{
+        height: 650px;
+    }
+
+    .hwd_item_sp:nth-child(4) .hwd_box .outside{
+        height: 600px;
+    }
 }
