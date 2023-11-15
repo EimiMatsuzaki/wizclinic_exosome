@@ -199,6 +199,12 @@
         row-gap: 30px;
     }
 
+    .efficacy_box .delay-time04,
+    .efficacy_box .delay-time08,
+    .efficacy_box .delay-time12{
+        animation-delay: 0s;
+    }
+
     .efficacy_item{
         width: 79.5vw;
     }

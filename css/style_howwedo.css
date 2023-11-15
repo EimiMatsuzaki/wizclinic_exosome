@@ -109,7 +109,7 @@
 }
 
 .hwd_figure_left .hwd_figure_caption p span{
-    border-bottom: solid 1px #faf080;
+    /* border-bottom: solid 1px #faf080; */
     padding-bottom: 5px;
 }
 
@@ -138,7 +138,7 @@
 }
 
 .hwd_figure_right .hwd_figure_caption p{
-    border-bottom: solid 1px #faf080;
+    /* border-bottom: solid 1px #faf080; */
     padding-bottom: 5px;
 }
 
