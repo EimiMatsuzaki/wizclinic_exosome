@@ -821,6 +821,7 @@ header{
 
     .faq_question h3{
         font-size: 18px;
+        line-height: 30px;
     }
 
     .faq_answer{
