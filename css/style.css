@@ -159,7 +159,7 @@ button:active {
 header{
     position: absolute;
     padding: 20px 40px;
-    z-index: 1;
+    z-index: 5000;
 }
 
 .header_logo{
@@ -170,7 +170,7 @@ header{
     position: fixed;
     top: 100px;
     right: 0;
-    z-index: 5000;
+/*     z-index: 5000; */
 }
 
 .banner_pc img{
