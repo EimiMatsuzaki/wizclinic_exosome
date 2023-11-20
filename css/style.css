@@ -159,6 +159,7 @@ button:active {
 header{
     position: absolute;
     padding: 20px 40px;
+    z-index: 1;
 }
 
 .header_logo{
@@ -218,9 +219,6 @@ header{
     transition: 0.2s;
 }
 
-.banner_pc .inside:hover{
-    padding-right: 0;
-}
 
 /* スマホ版 */
 @media screen and (max-width:767px){
@@ -412,13 +410,20 @@ header{
     margin-top: -3px;
 }
 
-.kv_circle .kv_gyoukai{
+.kv_circle .kv_hundred{
     margin-top: 7px;
 }
 
-.kv_circle .kv_suijun{
+.kv_circle .kv_hundred span{
     font-size: 70%;
+}
+
+.kv_circle .kv_hito{
     margin-top: -3px;
+}
+
+.kv_circle .kv_hito span{
+    letter-spacing: -0.15em;
 }
 
 .kv_right{
@@ -477,6 +482,15 @@ header{
 .kv_9800_pc{
     /* width: 359px; */
     width: 26.3vw;
+}
+
+.kv_vial{
+    align-self: end;
+    color: #fff;
+    font-size: 1.4vw;
+    letter-spacing: 0.1em;
+    margin-top: 10px;
+    padding-right: 8%;
 }
 
 .kv_efficacy{
@@ -605,6 +619,13 @@ header{
     .kv_9800_sp{
         width: 79.7vw;
         margin-top: 5px;
+    }
+
+    .kv_vial{
+        font-size: 4.1vw;
+        align-self: center;
+        margin-top: 5px;
+        padding-right: 0;
     }
 
     .kv_efficacy:nth-of-type(2){
