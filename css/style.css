@@ -424,6 +424,7 @@ header{
 
 .kv_circle .kv_hito span{
     letter-spacing: -0.15em;
+    margin-top: -3px;
 }
 
 .kv_right{
