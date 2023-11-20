@@ -159,6 +159,7 @@ button:active {
 header{
     position: absolute;
     padding: 20px 40px;
+    z-index: 5000;
 }
 
 .header_logo{
@@ -169,7 +170,7 @@ header{
     position: fixed;
     top: 100px;
     right: 0;
-    z-index: 5000;
+    /* z-index: 5000; */
 }
 
 .banner_pc img{
@@ -188,18 +189,24 @@ header{
 
 .banner_pc .outside {
     position: relative;
-    width: 80px;
+    width: 100px;
     height: 290px;
+    margin-right: -20px;
     background: #fff;
+    transition: 0.2s;
     -webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0 95%, 0 5%);
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 0 95%, 0 5%);
+}
+
+.banner_pc .outside:hover{
+    transform: translateX(-20px);
 }
 
 .banner_pc .inside{
     position: absolute;
     top: 1px;
     left: 1px;
-    right: 1px;
+    right: 0px;
     bottom: 1px;
     background: linear-gradient(to bottom, #3caf55 47%,#328232 100%);
     -webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0 95%, 0 5%);
@@ -208,7 +215,10 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-right: 20px;
+    transition: 0.2s;
 }
+
 
 /* スマホ版 */
 @media screen and (max-width:767px){
@@ -242,7 +252,7 @@ header{
     right: -120%;
 	width:100%;
     height: 100vh;/*ナビの高さ*/
-	background: rgba(27, 30, 46, 0.85);
+	background: rgba(27, 30, 46, 0.9);
     /*動き*/
 	transition: all 0.6s;
 }
@@ -400,13 +410,20 @@ header{
     margin-top: -3px;
 }
 
-.kv_circle .kv_gyoukai{
+.kv_circle .kv_hundred{
     margin-top: 7px;
 }
 
-.kv_circle .kv_suijun{
+.kv_circle .kv_hundred span{
     font-size: 70%;
+}
+
+.kv_circle .kv_hito{
     margin-top: -3px;
+}
+
+.kv_circle .kv_hito span{
+    letter-spacing: -0.15em;
 }
 
 .kv_right{
@@ -467,6 +484,15 @@ header{
     width: 26.3vw;
 }
 
+.kv_vial{
+    align-self: end;
+    color: #fff;
+    font-size: 1.4vw;
+    letter-spacing: 0.1em;
+    margin-top: 10px;
+    padding-right: 8%;
+}
+
 .kv_efficacy{
     display: flex;
     justify-content: center;
@@ -523,8 +549,10 @@ header{
         width: 25.6vw;
         height: auto;
         aspect-ratio: 1;
-        font-size: 18px;
-        line-height: 23px;
+        /* font-size: 18px; */
+        font-size: 4.62vw;
+        /* line-height: 23px; */
+        line-height: 5.9vw;
         margin-right: 20px;
     }
 
@@ -591,6 +619,13 @@ header{
     .kv_9800_sp{
         width: 79.7vw;
         margin-top: 5px;
+    }
+
+    .kv_vial{
+        font-size: 4.1vw;
+        align-self: center;
+        margin-top: 5px;
+        padding-right: 0;
     }
 
     .kv_efficacy:nth-of-type(2){
@@ -672,13 +707,6 @@ header{
     color: #468cbe;
 }
 
-.fixed {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 999;
-  }
-
 /* スマホ版 */
 @media screen and (max-width:767px){
     #nav_pc{
@@ -699,7 +727,8 @@ header{
         justify-content: center;
         align-items: center;
         padding: 0;
-        border-bottom: solid 1px #468cbe;;
+        border-bottom: solid 1px #468cbe;
+        box-sizing: border-box;
     }
 
     #nav_pc li:nth-child(2n){
@@ -762,6 +791,13 @@ header{
     letter-spacing: 0.08em;
     color: #96bee6;
     text-align: justify;
+    display: flex;
+    column-gap: 1em;
+    align-items: end;
+}
+
+.faq_question h3{
+    font-size: 22px;
 }
 
 .faq_answer{
@@ -776,7 +812,7 @@ header{
 /* スマホ版 */
 @media screen and (max-width:767px){
     #faq{
-        padding: 60px 20px 80px;
+        padding: 60px 20px 50px;
     }
     
     .faq_title span{
@@ -800,12 +836,20 @@ header{
 
     .faq_question{
         font-size: 18px;
+        column-gap: 0.5em;
+        align-items: start;
+    }
+
+    .faq_question h3{
+        font-size: 18px;
+        line-height: 30px;
     }
 
     .faq_answer{
         margin-top: 20px;
     }
 }
+
 
 /* アクセス------------------------------------------- */
 #access{
@@ -1084,6 +1128,10 @@ footer{
         position: fixed;
         bottom: 0;
         z-index: 999;
+        transition:all 0.3s;
+        /*はじめは非表示*/
+        opacity: 0;
+        transform: translateY(100px);
     }
 
     .arrow_banner{
@@ -1094,11 +1142,54 @@ footer{
         transform: translate(-50%, -50%);
     }
 
+    /*　上に上がる動き　*/
+
+    .banner_sp.UpMove{
+        animation: UpAnime 0.5s forwards;
+    }
+    @keyframes UpAnime{
+        from {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /*　下に下がる動き　*/
+
+    .banner_sp.DownMove{
+        animation: DownAnime 0.5s forwards;
+    }
+    @keyframes DownAnime{
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(100px);
+        }
+    }
+
 }
 
 /* PC版 */
 @media screen and (min-width:768px){
     .banner_sp{
         display: none;
+    }
+}
+
+/* タブレット版 */
+@media screen and (min-width:768px) and (max-width: 1024px){
+    .faq_question{
+        align-items: start;
+    }
+
+    .access_contents_right img{
+        margin-right: 30px;
     }
 }
