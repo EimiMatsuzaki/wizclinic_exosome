@@ -28,6 +28,7 @@ img{
 
 .title{
     font-family: 'Zen Old Mincho', serif;
+    font-weight: 600;
 }
 
 .paragraph{
@@ -170,7 +171,7 @@ header{
     position: fixed;
     top: 100px;
     right: 0;
-/*     z-index: 5000; */
+    /* z-index: 5000; */
 }
 
 .banner_pc img{
@@ -411,7 +412,7 @@ header{
 }
 
 .kv_circle .kv_hundred{
-/*     margin-top: 7px; */
+    /* margin-top: 7px; */
 }
 
 .kv_circle .kv_hundred span{
@@ -424,7 +425,7 @@ header{
 
 .kv_circle .kv_hito span{
     letter-spacing: -0.15em;
-    margin-top: -3px;
+    margin-right: 3px;
 }
 
 .kv_right{
@@ -454,6 +455,7 @@ header{
     color: #fff;
     /* font-size: 67px; */
     font-size: 4.9vw;
+    font-weight: 500;
     letter-spacing: -0.03em;
     text-align: center;
     line-height: 50px;
@@ -465,6 +467,7 @@ header{
     /* font-size: 25px; */
     display: block;
     font-size: 1.83vw;
+    font-weight: 500;
     letter-spacing: 0.17em;
     margin-bottom: 15px;
     line-height: 1em;
@@ -591,7 +594,6 @@ header{
     .kv_exosome span{
         /* font-size: 16px; */
         font-size: 4.1vw;
-        font-weight: 500;
         line-height: 1em;
         margin-bottom: 0;
         display: block;
@@ -601,7 +603,6 @@ header{
         margin-top: 0;
         margin-bottom: 0.2em;
         font-size: 6.67vw;
-        font-weight: 500;
     }
 
     .kv_price{
@@ -623,7 +624,7 @@ header{
     }
 
     .kv_vial{
-        font-size: 4.1vw;
+        font-size: 4.35vw;
         align-self: center;
         margin-top: 5px;
         padding-right: 0;
