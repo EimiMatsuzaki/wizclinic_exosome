@@ -45,7 +45,9 @@
 
 .menu_exosome_item .left{
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    align-items: center;
+    /* column-gap: 10px; */
     width: 20%;
     margin-bottom: 10px;
 }
@@ -58,9 +60,50 @@
     color: #1b1e2e;
 }
 
+.menu_exosome_item .left .vial_circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #c2d1e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+    color: #1a3d70;
+}
+
 .menu_exosome_item .right{
-    text-align: right;
+    /* text-align: right; */
     width: 80%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* column-gap: 10px; */
+}
+
+.menu_exosome_item .right .teika{
+    font-size: 16px;
+    /* letter-spacing: 0.04em; */
+    color: #1a3d70;
+    margin-top: 25px;
+}
+
+.menu_exosome_item .right .teika span{
+    font-size: 30px;
+    letter-spacing: -0.01em;
+    padding: 0 5px;
+}
+
+.menu_exosome_item .right .teika .yen{
+    font-size: 16px;
+    padding: 0;
+    margin-left: -5px;
+}
+
+.menu_exosome_item .right .arrow_campaign{
+    width: 20px;
+    margin-top: 35px;
+    margin-right: 10px;
 }
 
 .menu_exosome_item .right .priceoff{
@@ -68,6 +111,7 @@
     justify-content: right;
     align-items: end;
     column-gap: 10px;
+    padding-top: 10px;
 }
 
 .menu_exosome_item .right .priceoff img{
@@ -84,6 +128,10 @@
 .menu_exosome_item .right .priceoff .tax{
     font-size: 30px;
     letter-spacing: 0.04em;
+}
+
+.menu_exosome_item .right .priceoff .yen{
+    margin-left: -5px;
 }
 
 .menu_price .kome{
@@ -216,8 +264,10 @@
     margin-top: 40px;
 }
 
+.menu_exosome_item .right .teika .comma,
 .comma{
     font-size: 70%;
+    padding: 0;
 }
 
 @media screen and (max-width:767px) {
@@ -252,22 +302,41 @@
     .menu_exosome_item .left{
         justify-content: center;
         width: 100%;
+        column-gap: 0;
+        margin-bottom: 0;
+    }
+
+    .menu_exosome_item .left .vial_circle{
+        width: 30px;
+        height: 30px;
     }
 
     .menu_exosome_item .right{
         text-align: center;
         width: 100%;
+        flex-direction: column;
+    }
+
+    .menu_exosome_item .right .teika{
+        margin-top: 0;
+    }
+
+    .menu_exosome_item .right .arrow_campaign{
+        transform: rotate(90deg);
+        margin-top: 10px;
     }
     
     .menu_exosome_item .right .priceoff{
         justify-content: center;
         align-items: center;
         column-gap: 7px;
+        padding-top: 0;
     }
     
     .menu_exosome_item .right .priceoff img{
         width: 45px;
         margin-top: 5px;
+        margin-bottom: 0;
     }
     
     .menu_exosome_item .right .priceoff p{
